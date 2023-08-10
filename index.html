@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_Python?">What is Python?</a></li>
+        <li><a class="nav-link" href="#History">History</a></li>
+        <li><a class="nav-link" href="#Design_philosophy_and_features">Design philosophy and features</a></li>
+        <li><a class="nav-link" href="#Syntax_and_semantics">Syntax and semantics</a></li>
+        <li><a class="nav-link" href="#Indentation">Indentation</a></li>
+        <li><a class="nav-link" href="#Statements_and_control_flow">Statements and control flow</a></li>
+        <li><a class="nav-link" href="#Expressions">Expressions</a></li>
+        <li><a class="nav-link" href="#Methods">Methods</a></li>
+        <li><a class="nav-link" href="#Typing">Typing</a></li>
+        <li><a class="nav-link" href="#Arithmetic_operations">Arithmetic operations</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Python?">
+        <header>What is Python?</header>
+        <article>
+          <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+
+          <p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+
+          <p>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[37] Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+
+          <p>Python consistently ranks as one of the most popular programming languages.</p>
+        </article>
+      </section>
+      <section class="main-section" id="History">
+        <header>History</header>
+        <article>
+          <p>Python was conceived in the late 1980s[43] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[46] In January 2019, active Python core developers elected a five-member Steering Council to lead the project.</p>
+
+          <ul>
+            <li>Python 2.0 was released on 16 October 2000, with many major new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support.[49] Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x and 2.7.x. Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3.</li>
+
+            <li>Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.[52][53] No further security patches or other improvements will be released for it.[54][55] Currently only 3.7 and later are supported. In 2021, Python 3.9.2 and 3.8.8 were expedited[56] as all versions of Python (including 2.7) had security issues leading to possible remote code execution and web cache poisoning.</li>
+
+            <li>
+              In 2022, Python 3.10.4 and 3.9.12 were expedited[60] and 3.8.13, and 3.7.13, because of many security issues.[61] When Python 3.9.13 was released in May 2022, it was announced that the 3.9 series (joining the older series 3.8 and 3.7) would only receive security fixes in the future. On September 7, 2022, four new releases were made due to a potential denial-of-service attack: 3.10.7, 3.9.14, 3.8.14, and 3.7.14.
+
+As of November 2022, Python 3.11 is the stable release. Notable changes from 3.10 include increased program execution speed and improved error reporting.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Design_philosophy_and_features">
+        <header>Design philosophy and features</header>
+        <article>
+          <p>
+            Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of their features support functional programming and aspect-oriented programming (including metaprogramming and metaobjects).
+          </p>
+
+          <p>
+            Its design offers some support for functional programming in the Lisp tradition. It has filter,mapandreduce functions; list comprehensions, dictionaries, sets, and generator expressions. The standard library has two modules (itertools and functools) that implement functional tools borrowed from Haskell and Standard ML.
+          </p>
+
+          <p>
+            Its core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:
+          </p>
+          <ul>
+            <li>Beautiful is better than ugly.</li>
+            <li>Explicit is better than implicit.</li>
+            <li>Simple is better than complex.</li>
+            <li>Complex is better than complicated.</li>
+            <li>Readability counts.</li>
+          </ul>
+          <p>
+            A common neologism in the Python community is pythonic, which has a wide range of meanings related to program style. "Pythonic" code may use Python idioms well, be natural or show fluency in the language, or conform with Python's minimalist philosophy and emphasis on readability. Code that is difficult to understand or reads like a rough transcription from another programming language is called unpythonic.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Syntax_and_semantics">
+        <header>Syntax and semantics</header>
+        <article>
+          <p>Python is meant to be an easily readable language. Its formatting is visually uncluttered and often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are allowed but rarely used. It has fewer syntactic exceptions and special cases than C or Pascal.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Indentation">
+        <header>Indentation</header>
+        <article>
+          <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block. Thus, the program's visual structure accurately represents its semantic structure. This feature is sometimes termed the off-side rule. Some other languages use indentation this way; but in most, indentation has no semantic meaning. The recommended indent size is four spaces.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Statements_and_control_flow">
+        <header>Statements and control flow</header>
+        <article>
+          <p>Python's statements include:</p>
+          <ul>
+            <li>The assignment statement, using a single equals sign '='</li>
+            <li>The if statement, which conditionally executes a block of code, along with else and elif (a contraction of else-if)</li>
+            <li>The for statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block</li>
+            <li>The while statement, which executes a block of code as long as its condition is true</li>
+            <li>The try statement, which allows exceptions raised in its attached code block to be caught and handled by except clauses (or new syntax except* in Python 3.11 for exception groups); it also ensures that clean-up code in a finally block is always run regardless of how the block exits</li>
+            <li>The raise statement, used to raise a specified exception or re-raise a caught exception</li>
+            <li>The class statement, which executes a block of code and attaches its local namespace to a class, for use in object-oriented programming</li>
+            <li>The def statement, which defines a function or method</li>
+            <li>And many more that can be found in the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Python#see_also" target="_blank">Python Documentation</a></li>
+          </ul>
+        </article>
+        </section>
+        <section class="main-section" id="Expressions">
+        <header>Expressions</header>
+        <article>
+          <p>Python's expressions include:</p>
+          <ul>
+            <li>The +, -, and * operators for mathematical addition, subtraction, and multiplication are similar to other languages, but the behavior of division differs. There are two types of divisions in Python: floor division (or integer division) // and floating-point/division. Python uses the ** operator for exponentiation.</li>
+            <li>Python uses the + operator for string concatenation. Python uses the * operator for duplicating a string a specified number of times.</li>
+            <li>The @ infix operator. It is intended to be used by libraries such as NumPy for matrix multiplication.</li>
+            <li>The syntax :=, called the "walrus operator", was introduced in Python 3.8. It assigns values to variables as part of a larger expression.</li>
+            <p>Statements cannot be a part of an expression—so list and other comprehensions or lambda expressions, all being expressions, cannot contain statements. A particular case is that an assignment statement such as a = 1 cannot form part of the conditional expression of a conditional statement. This has the advantage of avoiding a classic C error of mistaking an assignment operator = for an equality operator == in conditions: if (c = 1) { ... } is syntactically valid (but probably unintended) C code, but if c = 1: ... causes a syntax error in Python.</p>
+          </ul>
+        </article>
+        </section>
+        <section class="main-section" id="Methods">
+        <header>Methods</header>
+        <article>
+          <p>Methods on objects are functions attached to the object's class; the syntax instance.method(argument) is, for normal methods and functions, syntactic sugar for Class.method(instance, argument).</p>
+
+          <p>Python methods have an explicit self parameter to access instance data, in contrast to the implicit self (or this) in some other object-oriented programming languages (e.g., C++, Java, Objective-C, Ruby).</p>
+
+          <p>Python also provides methods, often called dunder methods (due to their names beginning and ending with double-underscores), to allow user-defined classes to modify how they are handled by native operations including length, comparison, in arithmetic operations and type conversion.</p>
+        </article>
+        </section>
+        <section class="main-section" id="Typing">
+        <header>Typing</header>
+        <article>
+          <p>Python uses duck typing and has typed objects but untyped variable names. Type constraints are not checked at compile time; rather, operations on an object may fail, signifying that it is not of a suitable type. Despite being dynamically typed, Python is strongly typed, forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them.</p>
+
+          <p>Python allows programmers to define their own types using classes, most often used for object-oriented programming. New instances of classes are constructed by calling the class (for example, SpamClass() or EggsClass()), and the classes are instances of the metaclass type (itself an instance of itself), allowing metaprogramming and reflection.</p>
+
+<p><i>Examples of Python Code:</i></p>
+          <code># This program prints Hello, world!
+
+print('Hello, world!')</code>
+          <code># Python Program to calculate the square root
+
+# Note: change this value for a different result
+num = 8 
+
+# To take the input from the user
+#num = float(input('Enter a number: '))
+
+num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))</code>
+          <code># Python program to swap two variables
+
+x = 5
+y = 10
+
+# To take inputs from the user
+#x = input('Enter value of x: ')
+#y = input('Enter value of y: ')
+
+# create a temporary variable and swap the values
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+</code>
+          <code># Python program to check if year is a leap year or not
+
+year = 2000
+
+# year = int(input("Enter a year: "))
+
+
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+
+else:
+    print("{0} is not a leap year".format(year))</code>
+          <code># Python program to find the largest number among the three input numbers
+
+# change the values of num1, num2 and num3
+# for a different result
+num1 = 10
+num2 = 14
+num3 = 12
+
+# uncomment following lines to take three numbers from user
+#num1 = float(input("Enter first number: "))
+#num2 = float(input("Enter second number: "))
+#num3 = float(input("Enter third number: "))
+
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print("The largest number is", largest)</code>
+
+        </article>
+        </section>
+        <section class="main-section" id="Arithmetic_operations">
+        <header>Arithmetic operations</header>
+        <article>
+          <p>Python has the usual symbols for arithmetic operators (+, -, *, /), the floor division operator // and the modulo operation % (where the remainder can be negative, e.g. 4 % -3 == -2). It also has ** for exponentiation, e.g. 5**3 == 125 and 9**0.5 == 3.0, and a matrix‑multiplication operator @ .[108] These operators work like in traditional math; with the same precedence rules, the operators infix (+ and - can also be unary to represent positive and negative numbers respectively).</p>
+
+          <p>The division between integers produces floating-point results. The behavior of division has changed significantly over time:</p>
+          <ul>
+            <li>Current Python (i.e. since 3.0) changed / to always be floating-point division, e.g. 5/2 == 2.5.</li>
+            <li>The floor division // operator was introduced. So 7//3 == 2, -7//3 == -3, 7.5//3 == 2.0 and -7.5//3 == -3.0. Adding from __future__ import division causes a module used in Python 2.7 to use Python 3.0 rules for division (see above).</li>
+          </ul>
+          
+          <p>Python provides a round function for rounding a float to the nearest integer. For tie-breaking, Python 3 uses round to even: round(1.5) and round(2.5) both produce 2.[111] Versions before 3 used round-away-from-zero: round(0.5) is 1.0, round(-0.5) is −1.0.</p>
+
+          <p>Python allows Boolean expressions with multiple equality relations in a manner that is consistent with general use in mathematics. For example, the expression a < b < c tests whether a is less than b and b is less than c. C-derived languages interpret this expression differently: in C, the expression would first evaluate a < b, resulting in 0 or 1, and that result would then be compared with c.</p>
+
+          <p>Due to Python's extensive mathematics library, and the third-party library NumPy that further extends the native capabilities, it is frequently used as a scientific scripting language to aid in problems such as numerical data processing and manipulation.</p>
+        </article>
+        </section>
+        <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation from this page can be found <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">here</a></li>
+          </ul>
+        </article>
+        </section>
+    </main>
+  </<body>
+</html>
